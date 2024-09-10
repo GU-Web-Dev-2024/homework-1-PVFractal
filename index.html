@@ -11,6 +11,32 @@
     I also hope to gain a better understanding about websites as well as other web services.</p>
     <img src="media/Solaire.PNG" alt="Solaire of Astora">
     <a href="https://procreate.com/">How Solaire was drawn</a>
+    <style>
+      p {
+        color: rgb(30,100,250)
+      }
+    </style>
+    <p id="final_text">Boy, this website looks pretty terrible.</p>
+    <button id="lonely_button">Change to white text</button>
+    <button id="friendly_button">Change back!</button>
+    <script>
+      let lonelyButton = document.getElementById("lonely_button");
+      lonelyButton.addEventListener("click", function() {
+         changeTextColor("white");
+      });
+      
+      let myColor = new color(30,100,250)
+      let friendlyButton = document.getElementById("friendly_button");
+      friendlyButton.addEventListener("click", function() {
+         changeTextColor(myColor);
+      });
+
+      function changeTextColor(newColor) {
+        let p = document.getElementById("final_text");
+        p.style.color = newColor;
+      }
+    </script>
+
 
 
 </body>
