@@ -20,15 +20,10 @@
     <button id="lonely_button">Change to white text</button>
     <button id="friendly_button">Change back!</button>
     <script>
-      let lonelyButton = document.getElementById("lonely_button");
-      lonelyButton.addEventListener("click", function() {
-         changeTextColor("white");
-      });
       
-      let myColor = "red";
       let friendlyButton = document.getElementById("friendly_button");
       friendlyButton.addEventListener("click", function() {
-         changeTextColor(myColor);
+         changeTextColor("blue");
       });
 
       function changeTextColor(newColor) {
